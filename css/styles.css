@@ -2667,6 +2667,46 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
 }
 
+.footer-dev-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #A38B98;
+}
+
+.footer-kaxon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #F8BED4;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 0.22rem 0.65rem;
+  background: rgba(217, 79, 138, 0.14);
+  border: 1px solid rgba(217, 79, 138, 0.28);
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.footer-kaxon-link:hover {
+  background: rgba(217, 79, 138, 0.3);
+  border-color: rgba(217, 79, 138, 0.55);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(217, 79, 138, 0.25);
+}
+
+.footer-kaxon-link i {
+  font-size: 0.75rem;
+  transition: transform var(--transition-fast);
+}
+
+.footer-kaxon-link:hover i {
+  transform: translate(1px, -1px);
+}
+
 .footer-back-to-top {
   display: inline-flex;
   align-items: center;
