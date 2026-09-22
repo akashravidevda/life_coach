@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15-Minute Tarot Clarity Session for Relationships | Kirti YK</title>
+  <meta name="description" content="Feeling confused about your relationship? Book a personalised 15-minute Tarot Clarity Session with Kirti YK for ₹199 and explore your situation from a fresh perspective.">
+
+  <!-- Google Fonts: Playfair Display, Inter, Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons Web -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Kirti YK",
+        "jobTitle": "Certified Life Coach & Relationship Tarot Counsellor",
+        "description": "Helping successful women navigate relationship confusion and gain emotional clarity."
+      },
+      {
+        "@type": "Service",
+        "name": "15-Minute Tarot Clarity Session",
+        "provider": {
+          "@type": "Person",
+          "name": "Kirti YK"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "199",
+          "priceCurrency": "INR"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this a full Tarot reading?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is a focused 15-minute clarity session designed around your relationship concern and the questions you want perspective on."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does the session cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The introductory booking is just ₹199."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the session personalised?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The session is conducted around your specific situation and concerns."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Site Header
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="Kirti YK Home">
+        <span class="logo-mark"><i class="ph ph-sparkle"></i></span>
+        <span>Kirti YK</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#problem-awareness" class="nav-link">The Questions</a></li>
+          <li><a href="#session-outcomes" class="nav-link">What You Explore</a></li>
+          <li><a href="#about-guide" class="nav-link">About Kirti</a></li>
+          <li><a href="#testimonials" class="nav-link">Stories</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary header-cta-btn" data-open-modal aria-label="Book ₹199 Session">
+          Book ₹199 Session
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. Hero Section
+         ========================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="eyebrow">For Successful Women Feeling Stuck</span>
+          </div>
+
+          <h1 class="hero-headline">
+            You are Successful in Life. So Why Does Your <span class="highlight">Relationship Feel So Confusing?</span>
+          </h1>
+
+          <p class="hero-subheadline">
+            Stop overthinking every message, waiting for attention, and wondering where your relationship is actually going.
+          </p>
+
+          <p class="hero-supporting">
+            Get personalised clarity through a 15-Minute Tarot Clarity Reading to understand what is creating emotional distance, confusion, or repeated patterns in your relationship.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-open-modal aria-label="Book My ₹199 Tarot Clarity Session">
+              <span>BOOK MY ₹199 TAROT CLARITY SESSION</span>
+              <i class="ph ph-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <i class="ph ph-shield-check trust-icon"></i>
+              <span>Secure Booking</span>
+            </div>
+            <div class="trust-item">
+              <i class="ph ph-user-circle trust-icon"></i>
+              <span>15-Minute 1:1 Session</span>
+            </div>
+            <div class="trust-item">
+              <i class="ph ph-hourglass-high trust-icon"></i>
+              <span>Limited Weekly Slots</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrap">
+          <div class="hero-image-frame">
+            <img src="assets/images/hero.jpg" alt="Kirti YK in consultation holding a minimalist gold tarot card in a sunlit sanctuary" width="600" height="450" loading="eager">
+          </div>
+          <div class="hero-floating-card">
+            <div class="floating-icon-box">
+              <i class="ph ph-heart-half"></i>
+            </div>
+            <div>
+              <div class="floating-text-title">1:1 Relationship Clarity</div>
+              <div class="floating-text-sub">Compassionate and grounded guidance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. Problem Awareness Section
+         ========================================================================= -->
+    <section class="section section-white reveal-up" id="problem-awareness">
+      <div class="container">
+        <div class="problem-grid">
+          <div class="problem-left">
+            <h2>You Do Not Need More Overthinking. You Need Clarity.</h2>
+            <p class="tried-list-intro">Maybe you have already tried:</p>
+            <ul class="tried-list">
+              <li class="tried-item"><i class="ph ph-check-circle" style="color: var(--color-primary);"></i> Giving more attention and care</li>
+              <li class="tried-item"><i class="ph ph-check-circle" style="color: var(--color-primary);"></i> Being overly understanding of distance</li>
+              <li class="tried-item"><i class="ph ph-check-circle" style="color: var(--color-primary);"></i> Waiting quietly for them to change</li>
+              <li class="tried-item"><i class="ph ph-check-circle" style="color: var(--color-primary);"></i> Analysing every conversation and text</li>
+              <li class="tried-item"><i class="ph ph-check-circle" style="color: var(--color-primary);"></i> Asking close friends what they think</li>
+              <li class="tried-item"><i class="ph ph-check-circle" style="color: var(--color-primary);"></i> Trying tirelessly to fix the connection</li>
+            </ul>
+            <p class="problem-transition">And still... You are left wondering what is actually happening.</p>
+          </div>
+
+          <div class="problem-right">
+            <div class="question-cards-stack reveal-stagger">
+              <div class="question-card">
+                <span class="question-quote-icon">“</span>
+                <span class="question-text">Does he really care about this connection?</span>
+              </div>
+              <div class="question-card">
+                <span class="question-quote-icon">“</span>
+                <span class="question-text">Why has the emotional energy between us changed?</span>
+              </div>
+              <div class="question-card">
+                <span class="question-quote-icon">“</span>
+                <span class="question-text">Why am I always the one putting in the effort?</span>
+              </div>
+              <div class="question-card">
+                <span class="question-quote-icon">“</span>
+                <span class="question-text">Should I wait patiently... or is it time to move on?</span>
+              </div>
+              <div class="question-card">
+                <span class="question-quote-icon">“</span>
+                <span class="question-text">Is this relationship actually aligned to work?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Session Outcomes Bento Grid
+         ========================================================================= -->
+    <section class="section section-blush reveal-up" id="session-outcomes">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">WHAT YOU WILL EXPLORE</span>
+          <h2 class="section-title">What Will You Discover In Your Tarot Clarity Session?</h2>
+          <p class="section-subtitle">A focused 15-minute sanctuary designed to reveal what is truly happening beneath the surface.</p>
+        </div>
+
+        <div class="outcomes-grid reveal-stagger">
+          <div class="outcome-card featured">
+            <div class="outcome-top">
+              <span class="outcome-num">01</span>
+              <div class="outcome-icon-box">
+                <i class="ph ph-sparkle"></i>
+              </div>
+            </div>
+            <h3 class="outcome-title">Understand Current Relationship Energy</h3>
+            <p class="outcome-desc">Gain direct insight into the present dynamics and subtle emotional undercurrents influencing your connection.</p>
+          </div>
+
+          <div class="outcome-card">
+            <div class="outcome-top">
+              <span class="outcome-num">02</span>
+              <div class="outcome-icon-box">
+                <i class="ph ph-arrows-counter-clockwise"></i>
+              </div>
+            </div>
+            <h3 class="outcome-title">Identify The Pattern Behind The Confusion</h3>
+            <p class="outcome-desc">Uncover the recurring emotional cycles and subconscious patterns that may be keeping you stuck in doubt.</p>
+          </div>
+
+          <div class="outcome-card">
+            <div class="outcome-top">
+              <span class="outcome-num">03</span>
+              <div class="outcome-icon-box">
+                <i class="ph ph-compass"></i>
+              </div>
+            </div>
+            <h3 class="outcome-title">Get Clarity On Your Next Step</h3>
+            <p class="outcome-desc">Instead of endlessly guessing what to do next, gain a grounded and actionable perspective on your situation.</p>
+          </div>
+
+          <div class="outcome-card featured">
+            <div class="outcome-top">
+              <span class="outcome-num">04</span>
+              <div class="outcome-icon-box">
+                <i class="ph ph-eye"></i>
+              </div>
+            </div>
+            <h3 class="outcome-title">Understand What You May Be Overlooking</h3>
+            <p class="outcome-desc">Sometimes the answer is not about doing more. It is about seeing the relationship from a higher vantage point.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Emotional Identification Section (Dark Atmosphere)
+         ========================================================================= -->
+    <section class="section section-dark reveal-up" id="emotional-check">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Does This Sound Like You?</h2>
+          <p class="section-subtitle">If you resonate with these internal conversations, you are not alone.</p>
+        </div>
+
+        <div class="quotes-grid reveal-stagger">
+          <div class="quote-card">
+            <span class="quote-symbol">“</span>
+            <p class="quote-text">Everything looks perfect from the outside... but emotionally, I feel completely alone in this.</p>
+          </div>
+          <div class="quote-card">
+            <span class="quote-symbol">“</span>
+            <p class="quote-text">I find myself repeatedly checking my phone, hoping for a message or sign of warmth.</p>
+          </div>
+          <div class="quote-card">
+            <span class="quote-symbol">“</span>
+            <p class="quote-text">One day everything feels magical. The next day I feel completely ignored and second-guessing myself.</p>
+          </div>
+          <div class="quote-card">
+            <span class="quote-symbol">“</span>
+            <p class="quote-text">I keep giving chances because I do not know whether to stay patiently or walk away.</p>
+          </div>
+          <div class="quote-card">
+            <span class="quote-symbol">“</span>
+            <p class="quote-text">I am successful and capable everywhere else... so why do I feel so powerless in my relationship?</p>
+          </div>
+        </div>
+
+        <div class="emotional-cta-box">
+          <p>If even one of these feels familiar, do not spend another week stuck inside the same loop.</p>
+          <button class="btn btn-dark" data-open-modal aria-label="Yes, I Want My Clarity Session">
+            <span>YES, I WANT MY CLARITY SESSION</span>
+            <i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Future State Section
+         ========================================================================= -->
+    <section class="section section-white reveal-up" id="future-state">
+      <div class="container">
+        <div class="future-grid">
+          <div class="future-left">
+            <h2>Imagine Having Clarity Instead Of Constant Questions</h2>
+            <ul class="future-items">
+              <li class="future-item">
+                <span class="future-check-icon"><i class="ph ph-check"></i></span>
+                <span>Imagine waking up with peace instead of immediately wondering: “Will they message me today?”</span>
+              </li>
+              <li class="future-item">
+                <span class="future-check-icon"><i class="ph ph-check"></i></span>
+                <span>Imagine no longer re-reading and over-analysing their last message 20 times.</span>
+              </li>
+              <li class="future-item">
+                <span class="future-check-icon"><i class="ph ph-check"></i></span>
+                <span>Imagine understanding your emotional dynamics from a fresh, grounded perspective.</span>
+              </li>
+              <li class="future-item">
+                <span class="future-check-icon"><i class="ph ph-check"></i></span>
+                <span>Imagine finally feeling confident about what to do next.</span>
+              </li>
+            </ul>
+            <p style="font-size: 0.95rem; color: var(--color-muted); margin-bottom: 1.5rem;">
+              That is what this 15-Minute Tarot Clarity Session is designed to help you discover.
+            </p>
+            <button class="btn btn-primary" data-open-modal aria-label="Book My ₹199 Session">
+              <span>Book My ₹199 Session</span>
+              <i class="ph ph-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="future-right">
+            <div class="future-image-frame">
+              <img src="assets/images/clarity.jpg" alt="A peaceful woman enjoying calm morning sunlight by the window" width="600" height="450" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Meet Your Guide: Kirti YK
+         ========================================================================= -->
+    <section class="section section-blush reveal-up" id="about-guide">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-portrait-wrap">
+            <div class="about-portrait-frame">
+              <img src="assets/images/guide.jpg" alt="Portrait of Kirti YK, certified life coach and tarot counsellor" width="400" height="400" loading="lazy">
+            </div>
+            <div class="about-credentials-badge">
+              <i class="ph ph-certificate"></i>
+              <span>Certified Life Coach</span>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <h2>Meet Your Guide: Kirti YK</h2>
+            <p class="about-subtitle">Relationship Tarot Counsellor & Therapeutic Mandala Art Expert</p>
+            <p class="about-bio">
+              Kirti created this work specifically for women who are tired of feeling emotionally stuck despite being strong, independent, and accomplished in other areas of life. Her approach blends Tarot Counselling with proven holistic practices to help you look at your situation with clarity and self-trust.
+            </p>
+
+            <div class="toolkit-title">Her Holistic Toolkit Includes:</div>
+            <div class="toolkit-tags">
+              <span class="toolkit-tag"><i class="ph ph-sparkle"></i> Tarot Counselling</span>
+              <span class="toolkit-tag"><i class="ph ph-hash"></i> Numerology</span>
+              <span class="toolkit-tag"><i class="ph ph-heartbeat"></i> EFT</span>
+              <span class="toolkit-tag"><i class="ph ph-plant"></i> Ho'oponopono</span>
+              <span class="toolkit-tag"><i class="ph ph-paint-brush"></i> Mandala Art Therapy</span>
+              <span class="toolkit-tag"><i class="ph ph-sun"></i> Mantra Sadhana</span>
+            </div>
+
+            <div class="about-philosophy-card">
+              “This is not about being told what you must do. It is about gaining perspective, asking better questions, and moving toward the clarity you deserve.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. Client Testimonials
+         ========================================================================= -->
+    <section class="section section-white reveal-up" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">CLIENT EXPERIENCES</span>
+          <h2 class="section-title">What Women Are Saying</h2>
+          <p class="section-subtitle">Real experiences from women who stepped out of confusion into grounded clarity.</p>
+        </div>
+
+        <div class="testimonials-grid reveal-stagger">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <h3 class="testimonial-headline">“I finally understood the pattern.”</h3>
+              <p class="testimonial-quote">
+                “The session helped me recognise a relationship pattern I had been repeating without even realising it. I feel so much lighter.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">SR</div>
+              <div>
+                <div class="author-name">Sneha R.</div>
+                <div class="author-role">Marketing Manager, Bangalore</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <h3 class="testimonial-headline">“It gave me a completely different perspective.”</h3>
+              <p class="testimonial-quote">
+                “I was constantly questioning what I was doing wrong. The clarity session helped me step back and see the bigger emotional picture.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">PM</div>
+              <div>
+                <div class="author-name">Priya M.</div>
+                <div class="author-role">Software Engineer, Pune</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <h3 class="testimonial-headline">“I stopped feeling guilty for setting boundaries.”</h3>
+              <p class="testimonial-quote">
+                “I finally understood that constantly giving more was not going to build the mutual respect and love I wanted.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div>
+                <div class="author-name">Ananya K.</div>
+                <div class="author-role">HR Lead, Mumbai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. Urgency & High-Intent Booking Card
+         ========================================================================= -->
+    <section class="section urgency-section reveal-up" id="urgency">
+      <div class="container">
+        <div class="urgency-card">
+          <div class="urgency-tag">
+            <i class="ph ph-warning-circle"></i>
+            <span>Limited Appointments Available</span>
+          </div>
+
+          <h2 class="urgency-headline">Do Not Keep Waiting For Clarity</h2>
+          <p class="urgency-body">
+            Every day you spend overthinking the same situation is another day carrying emotional exhaustion. You do not need to decide your entire future today: you just need to take the next clear step.
+          </p>
+
+          <div class="urgency-price-box">
+            <div class="price-title">Introductory Relationship Reading</div>
+            <div class="price-number">₹199</div>
+            <div class="price-sub">15-Minute 1:1 Personalised Clarity Session</div>
+          </div>
+
+          <button class="btn btn-primary" data-open-modal aria-label="Book My ₹199 Session Now">
+            <span>BOOK MY ₹199 SESSION NOW</span>
+            <i class="ph ph-arrow-right"></i>
+          </button>
+
+          <div class="urgency-footnote">
+            First Come, First Served • Direct Calendar Confirmation
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. FAQ Accordion Section
+         ========================================================================= -->
+    <section class="section section-white reveal-up" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clear answers to help you feel completely comfortable before booking.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-button" type="button">
+              <span>Is this a full Tarot reading?</span>
+              <span class="faq-icon"><i class="ph ph-caret-down"></i></span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                This is a focused 15-minute clarity session designed specifically around your current relationship concern and the exact questions you want grounded perspective on.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" type="button">
+              <span>How much does the session cost?</span>
+              <span class="faq-icon"><i class="ph ph-caret-down"></i></span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                The introductory clarity session is priced at just ₹199 as a welcoming entry point for first-time clients.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" type="button">
+              <span>Is the session personalised to my situation?</span>
+              <span class="faq-icon"><i class="ph ph-caret-down"></i></span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Yes. Every session is conducted 1:1 around your specific relationship dynamics, questions, and personal concerns.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" type="button">
+              <span>Do I need prior knowledge or experience with Tarot?</span>
+              <span class="faq-icon"><i class="ph ph-caret-down"></i></span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                No prior experience is necessary. Kirti guides the entire session in plain, compassionate, and practical language.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-button" type="button">
+              <span>What if I keep delaying?</span>
+              <span class="faq-icon"><i class="ph ph-caret-down"></i></span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                If you are already spending hours every week in loops of overthinking, ₹199 is a small investment to gain fresh perspective and emotional peace.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         11. Final CTA Section
+         ========================================================================= -->
+    <section class="section section-blush reveal-up" id="final-cta">
+      <div class="container">
+        <div class="final-card">
+          <h2>Your Next Step Is Simple</h2>
+          <p class="final-subtitle">
+            You are already looking for answers. Now get the grounded clarity you need to move forward with peace.
+          </p>
+
+          <button class="btn btn-primary" data-open-modal aria-label="Claim My ₹199 Session">
+            <span>CLAIM MY ₹199 SESSION</span>
+            <i class="ph ph-arrow-right"></i>
+          </button>
+
+          <div class="final-trust-grid">
+            <div class="final-trust-badge">
+              <i class="ph ph-lock-key"></i>
+              <span>Secure Booking</span>
+            </div>
+            <div class="final-trust-badge">
+              <i class="ph ph-lightning"></i>
+              <span>Instant Confirmation</span>
+            </div>
+            <div class="final-trust-badge">
+              <i class="ph ph-target"></i>
+              <span>1:1 Personalised</span>
+            </div>
+            <div class="final-trust-badge">
+              <i class="ph ph-clock"></i>
+              <span>Limited Weekly Slots</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         12. Ethical Disclaimer
+         ========================================================================= -->
+    <section class="disclaimer-section" id="disclaimer">
+      <div class="container">
+        <div class="disclaimer-content">
+          <div class="disclaimer-title">Important Guidance Disclaimer</div>
+          <p class="disclaimer-text">
+            Tarot readings and clarity sessions are intended for personal reflection, emotional insight, and self-discovery. They are not a substitute for professional medical, legal, financial, or clinical mental health therapy. Outcomes and personal realizations vary with each individual.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       13. Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">Kirti YK</div>
+        <div class="footer-tagline">Clarity. Perspective. Conscious Choices.</div>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#hero" class="footer-link">Session Details</a></li>
+        <li><a href="#about-guide" class="footer-link">About Kirti</a></li>
+        <li><a href="#faq" class="footer-link">FAQ</a></li>
+        <li><a href="#disclaimer" class="footer-link">Disclaimer</a></li>
+      </ul>
+
+      <div class="footer-copyright">
+        © 2026 Kirti YK. All rights reserved. Built with elegance and intention.
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       14. Sticky Mobile CTA Bar
+       ========================================================================= -->
+  <div class="sticky-mobile-cta" id="stickyMobileCTA" aria-hidden="true">
+    <div class="mobile-cta-info">
+      <span class="mobile-cta-label">15-Min Clarity Session</span>
+      <span class="mobile-cta-price">₹199</span>
+    </div>
+    <button class="btn btn-primary" data-open-modal aria-label="Book Now" style="padding: 0.65rem 1.25rem; min-height: 44px; font-size: 0.85rem;">
+      BOOK NOW
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       15. Interactive 1:1 Booking Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading" aria-hidden="true">
+    <div class="modal-card">
+      <!-- Close Button -->
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Booking Modal">
+        <i class="ph ph-x"></i>
+      </button>
+
+      <!-- Form View -->
+      <div id="modalFormView">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalHeading">Book Your Clarity Session</h3>
+          <div class="modal-sub">15-Minute 1:1 Personalised Relationship Reading</div>
+        </div>
+
+        <div class="modal-body">
+          <form class="booking-form" id="bookingForm">
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name *</label>
+              <input class="form-input" type="text" id="fullName" name="fullName" required placeholder="e.g. Radhika Sharma">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="whatsappNumber">WhatsApp Number *</label>
+              <input class="form-input" type="tel" id="whatsappNumber" name="whatsappNumber" required placeholder="e.g. +91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="e.g. radhika@example.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sessionSlot">Preferred Session Slot *</label>
+              <select class="form-select" id="sessionSlot" name="sessionSlot" required>
+                <option value="">Select a time slot</option>
+                <option value="morning">Morning (10:00 AM - 1:00 PM)</option>
+                <option value="afternoon">Afternoon (2:00 PM - 5:00 PM)</option>
+                <option value="evening">Evening (6:00 PM - 9:00 PM)</option>
+                <option value="weekend">Weekend Special Slot</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clarityTopic">What would you like clarity about? (Optional)</label>
+              <textarea class="form-textarea" id="clarityTopic" name="clarityTopic" placeholder="Briefly share what is on your mind..."></textarea>
+            </div>
+
+            <div class="form-summary-row">
+              <span class="form-summary-label">Total Booking Amount</span>
+              <span class="form-summary-price">₹199</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              <span>PROCEED TO SECURE SLOT (₹199)</span>
+              <i class="ph ph-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Confirmation View -->
+      <div id="modalConfView" class="modal-confirmation-view">
+        <div class="conf-icon-box">
+          <i class="ph ph-check-circle"></i>
+        </div>
+        <h3 class="conf-title">Session Slot Reserved!</h3>
+        <p class="conf-desc">
+          Thank you! Kirti YK has received your details. You will receive a WhatsApp message and email with your meeting link and confirmation within 15 minutes.
+        </p>
+        <button class="btn btn-primary" id="confCloseBtn" style="min-width: 180px;">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
