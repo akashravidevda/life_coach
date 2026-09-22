@@ -848,34 +848,182 @@
     </section>
 
     <!-- =========================================================================
-         9. Urgency & High-Intent Booking Card
+         9. Urgency & High-Intent Booking Section - Reference Perfect
          ========================================================================= -->
     <section class="urgency-section reveal-up" id="urgency">
-      <div class="container">
-        <div class="urgency-card">
+      <!-- Background Ambient Glow & Star Sparkles -->
+      <div class="urgency-ambient-glow" aria-hidden="true"></div>
+
+      <!-- Concentric Orbital Wire Arcs -->
+      <div class="urgency-orbit-arcs" aria-hidden="true">
+        <svg width="680" height="680" viewBox="0 0 680 680" fill="none" stroke="currentColor">
+          <circle cx="340" cy="340" r="330" stroke="url(#urgencyGoldGrad1)" stroke-width="0.8" opacity="0.3" stroke-dasharray="6 4" />
+          <circle cx="340" cy="340" r="260" stroke="url(#urgencyGoldGrad1)" stroke-width="0.9" opacity="0.38" />
+          <circle cx="340" cy="340" r="180" stroke="url(#urgencyGoldGrad1)" stroke-width="0.7" opacity="0.25" />
+          <defs>
+            <linearGradient id="urgencyGoldGrad1" x1="0" y1="0" x2="680" y2="680" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFD6E8" stop-opacity="0.8"/>
+              <stop offset="0.5" stop-color="#E8A2BF" stop-opacity="0.4"/>
+              <stop offset="1" stop-color="#C9A96E" stop-opacity="0.8"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Crescent Moon on Left -->
+      <div class="urgency-crescent-moon" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <path d="M48 10 C32 14, 20 28, 22 46 C24 54, 30 60, 36 62 C22 62, 8 50, 8 34 C8 18, 22 6, 38 4 C42 4, 45 6, 48 10 Z" fill="url(#moonGrad)" opacity="0.75" />
+          <defs>
+            <linearGradient id="moonGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFF0F6" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#DFBA7E" stop-opacity="0.5"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Botanical Foliage Left -->
+      <div class="urgency-botanical urgency-botanical-left" aria-hidden="true">
+        <svg width="260" height="460" viewBox="0 0 260 460" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-10 40 C50 80, 110 140, 130 220 C150 310, 90 400, -20 450" opacity="0.5" />
+          <path d="M55 85 C80 60, 140 55, 160 80 C170 105, 145 140, 90 125 C65 115, 55 95, 55 85 Z" opacity="0.45" />
+          <path d="M90 150 C130 135, 190 140, 210 170 C220 200, 190 235, 130 210 C100 195, 95 170, 90 150 Z" opacity="0.5" />
+          <path d="M110 240 C160 250, 205 300, 190 340 C170 375, 110 350, 85 300 C80 270, 95 245, 110 240 Z" opacity="0.45" />
+          <path d="M60 330 C100 370, 125 430, 95 460 C65 480, 20 450, 15 400 C15 360, 45 335, 60 330 Z" opacity="0.4" />
+        </svg>
+      </div>
+
+      <!-- Botanical Foliage Right -->
+      <div class="urgency-botanical urgency-botanical-right" aria-hidden="true">
+        <svg width="260" height="460" viewBox="0 0 260 460" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-10 40 C50 80, 110 140, 130 220 C150 310, 90 400, -20 450" opacity="0.5" />
+          <path d="M55 85 C80 60, 140 55, 160 80 C170 105, 145 140, 90 125 C65 115, 55 95, 55 85 Z" opacity="0.45" />
+          <path d="M90 150 C130 135, 190 140, 210 170 C220 200, 190 235, 130 210 C100 195, 95 170, 90 150 Z" opacity="0.5" />
+          <path d="M110 240 C160 250, 205 300, 190 340 C170 375, 110 350, 85 300 C80 270, 95 245, 110 240 Z" opacity="0.45" />
+          <path d="M60 330 C100 370, 125 430, 95 460 C65 480, 20 450, 15 400 C15 360, 45 335, 60 330 Z" opacity="0.4" />
+        </svg>
+      </div>
+
+      <!-- Side Vignette Typography -->
+      <div class="urgency-vignette-text urgency-vignette-left" aria-hidden="true">
+        <span>CLARITY</span>
+        <span>BRINGS</span>
+        <span>A BRIGHTER</span>
+        <span>TOMORROW</span>
+      </div>
+
+      <div class="urgency-vignette-text urgency-vignette-right" aria-hidden="true">
+        <span>SAME</span>
+        <span>QUESTIONS</span>
+        <span>A DIFFERENT</span>
+        <span>YOU</span>
+      </div>
+
+      <!-- Sparkle Accents -->
+      <span class="urgency-sparkle u-sp-1" aria-hidden="true">✦</span>
+      <span class="urgency-sparkle u-sp-2" aria-hidden="true">✦</span>
+      <span class="urgency-sparkle u-sp-3" aria-hidden="true">✦</span>
+      <span class="urgency-sparkle u-sp-4" aria-hidden="true">✦</span>
+
+      <div class="container urgency-container">
+        <div class="urgency-content-wrap">
+          <!-- Top Limited Appointments Pill Badge -->
           <div class="urgency-tag">
-            <i class="ph ph-warning-circle"></i>
+            <i class="ph ph-clock"></i>
             <span>Limited Appointments Available</span>
           </div>
 
-          <h2 class="urgency-headline">Do Not Keep Waiting For Clarity</h2>
+          <!-- Section Heading -->
+          <h2 class="urgency-headline">
+            Do Not Keep Waiting <span class="headline-italic-rose">For Clarity</span>
+          </h2>
+
+          <!-- Center Diamond Divider -->
+          <div class="urgency-diamond-divider" aria-hidden="true">
+            <span class="u-divider-line"></span>
+            <span class="u-divider-star">✧</span>
+            <span class="u-divider-line"></span>
+          </div>
+
+          <!-- Subtitle Body -->
           <p class="urgency-body">
-            Every day you spend overthinking the same situation is another day carrying emotional exhaustion. You do not need to decide your entire future today: you just need to take the next clear step.
+            Every day you spend overthinking the same situation is another day carrying emotional exhaustion. You do not need to decide your entire future today; you just need to take the next clear step.
           </p>
 
+          <!-- Center Luxury Silk-Parchment Pricing Box -->
           <div class="urgency-price-box">
-            <div class="price-title">Introductory Relationship Reading</div>
-            <div class="price-number">₹199</div>
+            <!-- Delicate Floral Watermark Details -->
+            <div class="parchment-watermark p-wm-left" aria-hidden="true">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M5 55 C15 35, 35 25, 55 15" opacity="0.3" />
+                <path d="M20 40 C30 30, 45 35, 50 45 C45 55, 30 50, 20 40 Z" opacity="0.25" />
+              </svg>
+            </div>
+            <div class="parchment-watermark p-wm-right" aria-hidden="true">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M55 55 C45 35, 25 25, 5 15" opacity="0.3" />
+                <path d="M40 40 C30 30, 15 35, 10 45 C15 55, 30 50, 40 40 Z" opacity="0.25" />
+              </svg>
+            </div>
+
+            <div class="price-eyebrow-row">
+              <span class="p-eyebrow-line"></span>
+              <span class="price-title">INTRODUCTORY RELATIONSHIP READING</span>
+              <span class="p-eyebrow-line"></span>
+            </div>
+
+            <div class="price-display-row">
+              <span class="price-sparkle">✦</span>
+              <span class="price-number">₹199</span>
+              <span class="price-sparkle">✦</span>
+            </div>
+
             <div class="price-sub">15-Minute 1:1 Personalised Clarity Session</div>
           </div>
 
-          <button class="btn btn-primary" data-open-modal aria-label="Book My ₹199 Session Now">
-            <span>BOOK MY ₹199 SESSION NOW</span>
-            <i class="ph ph-arrow-right"></i>
-          </button>
+          <!-- Primary CTA Button -->
+          <div class="urgency-cta-group">
+            <button class="btn btn-urgency-luminous" data-open-modal aria-label="Book My ₹199 Session Now">
+              <span>BOOK MY ₹199 SESSION NOW</span>
+              <i class="ph ph-arrow-right"></i>
+            </button>
+            <div class="urgency-footnote">
+              First Come, First Served • Direct Calendar Confirmation
+            </div>
+          </div>
 
-          <div class="urgency-footnote">
-            First Come, First Served • Direct Calendar Confirmation
+          <!-- 3-Item Bottom Trust Reassurance Strip -->
+          <div class="urgency-trust-strip">
+            <div class="u-trust-item">
+              <div class="u-trust-icon-circle">
+                <i class="ph ph-shield-check"></i>
+              </div>
+              <div class="u-trust-text-group">
+                <span class="u-trust-title">Secure Booking</span>
+                <span class="u-trust-sub">Your privacy is safe</span>
+              </div>
+            </div>
+
+            <div class="u-trust-item">
+              <div class="u-trust-icon-circle">
+                <i class="ph ph-heart"></i>
+              </div>
+              <div class="u-trust-text-group">
+                <span class="u-trust-title">Personalised Session</span>
+                <span class="u-trust-sub">Guidance for your unique situation</span>
+              </div>
+            </div>
+
+            <div class="u-trust-item">
+              <div class="u-trust-icon-circle">
+                <i class="ph ph-calendar"></i>
+              </div>
+              <div class="u-trust-text-group">
+                <span class="u-trust-title">Limited Weekly Slots</span>
+                <span class="u-trust-sub">High demand, only a few available</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -992,41 +1140,123 @@
         </div>
       </div>
     </section>
-
-    <!-- =========================================================================
-         12. Ethical Disclaimer
-         ========================================================================= -->
-    <section class="disclaimer-section" id="disclaimer">
-      <div class="container">
-        <div class="disclaimer-content">
-          <div class="disclaimer-title">Important Guidance Disclaimer</div>
-          <p class="disclaimer-text">
-            Tarot readings and clarity sessions are intended for personal reflection, emotional insight, and self-discovery. They are not a substitute for professional medical, legal, financial, or clinical mental health therapy. Outcomes and personal realizations vary with each individual.
-          </p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- =========================================================================
-       13. Footer
+       13. Elevated Luxury Footer
        ========================================================================= -->
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <div class="footer-brand">
-        <div class="footer-logo">Kirti YK</div>
-        <div class="footer-tagline">Clarity. Perspective. Conscious Choices.</div>
+  <footer class="site-footer" id="siteFooter">
+    <!-- Top Warm Sign-off Ribbon -->
+    <div class="footer-signoff-ribbon">
+      <div class="container footer-signoff-container">
+        <span class="signoff-sparkle">✦</span>
+        <p class="footer-signoff-text">
+          “You deserve clarity, peace, and healthy love.”
+          <span class="footer-signature">— Kirti ♡</span>
+        </p>
+        <span class="signoff-sparkle">✦</span>
+      </div>
+    </div>
+
+    <div class="container footer-main-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Mission -->
+        <div class="footer-col footer-col-brand">
+          <a href="#hero" class="footer-logo" aria-label="Kirti YK Home">
+            <span class="logo-sparkle">✦</span>
+            <span class="logo-text">Kirti YK</span>
+          </a>
+          <p class="footer-brand-desc">
+            A compassionate, judgement-free sanctuary providing intuitive tarot clarity, emotional grounding, and conscious relationship insight for mindful women.
+          </p>
+          <div class="footer-booking-pill">
+            <button class="btn-footer-cta" data-open-modal aria-label="Book ₹199 Session">
+              <i class="ph ph-sparkle"></i>
+              <span>Book ₹199 Clarity Session</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Col 2: The Journey -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">The Journey</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#problem-awareness" class="footer-nav-link">The Questions</a></li>
+            <li><a href="#session-outcomes" class="footer-nav-link">What You Explore</a></li>
+            <li><a href="#emotional-check" class="footer-nav-link">Does This Sound Like You?</a></li>
+            <li><a href="#future-state" class="footer-nav-link">Your Transformation</a></li>
+            <li><a href="#about-guide" class="footer-nav-link">About Kirti</a></li>
+            <li><a href="#testimonials" class="footer-nav-link">Stories & Reviews</a></li>
+            <li><a href="#faq" class="footer-nav-link">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: The Sanctuary Experience -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">The Experience</h4>
+          <ul class="footer-features-list">
+            <li class="footer-feature-item">
+              <i class="ph ph-heart-straight"></i>
+              <span>15-Minute 1:1 Live Clarity</span>
+            </li>
+            <li class="footer-feature-item">
+              <i class="ph ph-shield-check"></i>
+              <span>100% Confidential & Private</span>
+            </li>
+            <li class="footer-feature-item">
+              <i class="ph ph-plant"></i>
+              <span>Judgement-Free Safe Space</span>
+            </li>
+            <li class="footer-feature-item">
+              <i class="ph ph-compass"></i>
+              <span>Actionable Grounded Guidance</span>
+            </li>
+            <li class="footer-feature-item">
+              <i class="ph ph-sparkle"></i>
+              <span>No Fear-Based Predictions</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Session Details -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Session Details</h4>
+          <div class="footer-session-card">
+            <div class="f-card-header">
+              <span class="f-card-badge">Limited Slots</span>
+              <span class="f-card-price">₹199</span>
+            </div>
+            <p class="f-card-note">
+              Conducted 1:1 online. Limited appointments available each week to preserve energy and dedicated focus.
+            </p>
+            <div class="f-card-trust">
+              <i class="ph ph-lock-key"></i>
+              <span>Encrypted & Safe Booking</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <ul class="footer-links">
-        <li><a href="#hero" class="footer-link">Session Details</a></li>
-        <li><a href="#about-guide" class="footer-link">About Kirti</a></li>
-        <li><a href="#faq" class="footer-link">FAQ</a></li>
-        <li><a href="#disclaimer" class="footer-link">Disclaimer</a></li>
-      </ul>
+      <!-- Legal & Ethics Disclaimer -->
+      <div class="footer-disclaimer-wrap" id="disclaimer">
+        <div class="footer-disclaimer-heading">
+          <i class="ph ph-info"></i>
+          <span>Important Guidance Disclaimer</span>
+        </div>
+        <p class="footer-disclaimer-body">
+          Tarot readings and clarity sessions with Kirti YK are intended solely for personal reflection, emotional insight, and self-discovery. They are not a substitute for professional medical, legal, financial, or clinical mental health therapy. Outcomes, personal realizations, and relationship choices remain entirely with each individual.
+        </p>
+      </div>
 
-      <div class="footer-copyright">
-        © 2026 Kirti YK. All rights reserved. Built with elegance and intention.
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copy-text">
+          © 2026 Kirti YK. All rights reserved. Crafted with clarity, elegance & intention.
+        </div>
+        <a href="#hero" class="footer-back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <i class="ph ph-arrow-up"></i>
+        </a>
       </div>
     </div>
   </footer>
