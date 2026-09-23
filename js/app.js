@@ -371,7 +371,6 @@ function initScrollAnimations() {
         .from('.hero-subheadline', { opacity: 0, y: 15 }, '-=0.6')
         .from('.hero-supporting-text', { opacity: 0, y: 15 }, '-=0.5')
         .from('.hero-cta-group', { opacity: 0, y: 18 }, '-=0.5')
-        .from('.hero-trust-row .hero-trust-item', { opacity: 0, y: 10, stagger: 0.08 }, '-=0.4')
         .from('.hero-visual-container', { opacity: 0, scale: 0.96, duration: 1 }, '-=0.9');
 
   // Scroll reveals
