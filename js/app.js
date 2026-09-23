@@ -1,10 +1,11 @@
 /**
- * Kirti YK — Relationship Clarity Landing Page V3 Logic
+ * Kirti YK — Relationship Clarity Landing Page Logic
  * Vanilla JavaScript + GSAP ScrollTrigger
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
+  initMobileMenu();
   initQuestionAccordion();
   initFAQ();
   initModal();
@@ -15,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* --------------------------------------------------------------------------
-   1. Site Header & Scroll Detection
+   1. Site Header & Mobile Navigation Drawer
    -------------------------------------------------------------------------- */
 function initHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
   const handleScroll = () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -33,36 +34,92 @@ function initHeader() {
   handleScroll();
 }
 
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobileMenuToggle');
+  const drawer = document.getElementById('mobileNavDrawer');
+  if (!toggleBtn || !drawer) return;
+
+  const toggleMenu = () => {
+    const isOpen = drawer.classList.contains('open');
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
+
+  const openMenu = () => {
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+    toggleBtn.classList.add('open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+  };
+
+  const closeMenu = () => {
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    toggleBtn.classList.remove('open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+  };
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // Close drawer when clicking any link or button inside
+  const drawerLinks = drawer.querySelectorAll('a, button');
+  drawerLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
+
+  // Close drawer when clicking outside
+  document.addEventListener('click', (e) => {
+    if (drawer.classList.contains('open') && !drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+}
+
 /* --------------------------------------------------------------------------
    2. Interactive Problem Question Cards
    -------------------------------------------------------------------------- */
 function initQuestionAccordion() {
-  const questionCards = document.querySelectorAll('.question-card');
-  if (!questionCards.length) return;
+  const questionItems = document.querySelectorAll('.question-item');
+  if (!questionItems.length) return;
 
-  questionCards.forEach((card) => {
-    const headerBtn = card.querySelector('.question-card-header');
+  questionItems.forEach((item) => {
+    const headerBtn = item.querySelector('.question-item-btn');
     if (!headerBtn) return;
 
     headerBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const isAlreadyActive = card.classList.contains('active');
+      const isAlreadyActive = item.classList.contains('active');
 
       // Close other question cards for focused experience
-      questionCards.forEach((other) => {
-        if (other !== card) {
+      questionItems.forEach((other) => {
+        if (other !== item) {
           other.classList.remove('active');
-          const otherBtn = other.querySelector('.question-card-header');
+          const otherBtn = other.querySelector('.question-item-btn');
           if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
         }
       });
 
       // Toggle clicked card
       if (isAlreadyActive) {
-        card.classList.remove('active');
+        item.classList.remove('active');
         headerBtn.setAttribute('aria-expanded', 'false');
       } else {
-        card.classList.add('active');
+        item.classList.add('active');
         headerBtn.setAttribute('aria-expanded', 'true');
       }
     });
@@ -309,13 +366,13 @@ function initScrollAnimations() {
 
   // Hero Timeline
   const heroTl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.8 } });
-  heroTl.from('.hero-eyebrow', { opacity: 0, y: 15, delay: 0.1 })
+  heroTl.from('.hero-badge-wrap', { opacity: 0, y: 15, delay: 0.1 })
         .from('.hero-headline', { opacity: 0, y: 20, duration: 0.9 }, '-=0.5')
         .from('.hero-subheadline', { opacity: 0, y: 15 }, '-=0.6')
-        .from('.insight-gap-box', { opacity: 0, x: -20, duration: 0.8 }, '-=0.5')
-        .from('.hero-cta-wrapper', { opacity: 0, y: 18 }, '-=0.5')
-        .from('.hero-trust-strip .hero-trust-item', { opacity: 0, y: 10, stagger: 0.1 }, '-=0.4')
-        .from('.hero-visual-wrap', { opacity: 0, scale: 0.95, duration: 1 }, '-=0.9');
+        .from('.hero-supporting-text', { opacity: 0, y: 15 }, '-=0.5')
+        .from('.hero-cta-group', { opacity: 0, y: 18 }, '-=0.5')
+        .from('.hero-trust-row .hero-trust-item', { opacity: 0, y: 10, stagger: 0.08 }, '-=0.4')
+        .from('.hero-visual-container', { opacity: 0, scale: 0.96, duration: 1 }, '-=0.9');
 
   // Scroll reveals
   if (typeof ScrollTrigger !== 'undefined') {
@@ -323,13 +380,14 @@ function initScrollAnimations() {
       gsap.from(elem, {
         scrollTrigger: {
           trigger: elem,
-          start: 'top 88%',
+          start: 'top 92%',
           toggleActions: 'play none none none'
         },
         opacity: 0,
-        y: 26,
+        y: 24,
         duration: 0.7,
-        ease: 'power2.out'
+        ease: 'power2.out',
+        clearProps: 'all'
       });
     });
 
@@ -338,14 +396,15 @@ function initScrollAnimations() {
       gsap.from(items, {
         scrollTrigger: {
           trigger: container,
-          start: 'top 88%',
+          start: 'top 92%',
           toggleActions: 'play none none none'
         },
         opacity: 0,
-        y: 22,
-        stagger: 0.09,
-        duration: 0.65,
-        ease: 'power2.out'
+        y: 20,
+        stagger: 0.08,
+        duration: 0.6,
+        ease: 'power2.out',
+        clearProps: 'all'
       });
     });
   }
